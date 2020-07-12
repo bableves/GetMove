@@ -25,7 +25,7 @@ const Home = () => {
       </Grid>
       <Grid item>
         <Button color="primary" variant="contained">
-          Regisztálok
+          Regisztrálok
         </Button>
       </Grid>
       <Grid item>

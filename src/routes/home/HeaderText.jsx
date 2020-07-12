@@ -23,10 +23,7 @@ const HeaderText = () => {
         Lórum ipse letnyi, szuvas, de a drán közves, a tolk pedig
         állott zoncola
       </Typography>
-      <Typography
-        variant="h4"
-        className={`${classes.ModifierWhiteFont}`}
-      >
+      <Typography variant="h4" className={classes.ModifierWhiteFont}>
         Ebben encsített a tatagos szarás, immár egy ojása egyetlen
         horzó sem tudott főzelnie a hatló arzáson
       </Typography>
