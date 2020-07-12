@@ -1,0 +1,52 @@
+{
+  "root": true,
+  "env": { "browser": true },
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "plugins": ["prettier", "simple-import-sort"],
+  "settings": {
+    "import/no-unresolved": 2,
+    "import/resolver": {
+      "node": { "moduleDirectory": ["node_modules", "src"] },
+      "babel-module": {
+        "root": ["./src"]
+        /* "alias": {
+            "#components": "./src/components",
+            "#connectors": "./src/connectors",
+            "#contexts": "./src/contexts",
+            "#hooks": "./src/hooks",
+            "#satellites": "./src/satellites",
+            "#services": "./src/services",
+            "#utils": "./src/utils"
+          } */
+      }
+    }
+  },
+  "rules": {
+    "strict": 0,
+    "import/no-webpack-loader-syntax": [0], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
+    //"import/no-absolute-path": "off",
+    //"react/jsx-pascal-case": "off",
+    "react/jsx-props-no-spreading": "off", // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
+    "react-hooks/rules-of-hooks": "error", // https://reactjs.org/docs/hooks-rules.html
+    "react-hooks/exhaustive-deps": "warn", // https://reactjs.org/docs/hooks-rules.html
+    "prettier/prettier": "error",
+    "simple-import-sort/sort": "error",
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["_id"], // To support MongoDB _id property
+        "allowAfterThis": false,
+        "allowAfterSuper": false,
+        "enforceInMethodNames": false
+      }
+    ]
+  }
+}
