@@ -13,29 +13,29 @@ const MenuLinks = ({ classes }) => (
         activeClassName={classes.activeLink}
       >
         <Typography variant="h5" className={classes.modifierBold}>
-          Home
+          Bemutatkozás
         </Typography>
       </NavLink>
     </Grid>
     <Grid item>
       <NavLink
-        to="/about"
+        to="/template1"
         className={classes.passiveLink}
         activeClassName={classes.activeLink}
       >
         <Typography variant="h5" className={classes.modifierBold}>
-          About
+          Template
         </Typography>
       </NavLink>
     </Grid>
     <Grid item>
       <NavLink
-        to="/users"
+        to="/template2"
         className={classes.passiveLink}
         activeClassName={classes.activeLink}
       >
         <Typography variant="h5" className={classes.modifierBold}>
-          Users
+          Template
         </Typography>
       </NavLink>
     </Grid>

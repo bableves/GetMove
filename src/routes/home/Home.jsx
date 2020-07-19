@@ -29,9 +29,6 @@ const Home = () => {
           Regisztrálok
         </Button>
       </Grid>
-      <Grid item>
-        <Button variant="outlined">Bejelentkezés</Button>
-      </Grid>
     </Grid>
   );
 };

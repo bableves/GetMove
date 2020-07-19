@@ -2,14 +2,12 @@ import React from 'react';
 import { Grid, Button } from '@material-ui/core';
 
 const MenuButtons = () => (
-  <Grid container>
+  <Grid container spacing={1} style={{ paddingRight: '1em' }}>
     <Grid item>
-      <Button color="primary" variant="outlined">
-        Belépés
-      </Button>
+      <Button style={{ color: 'white' }}>Belépés</Button>
     </Grid>
     <Grid item>
-      <Button color="secondary" variant="outlined">
+      <Button color="primary" variant="contained">
         Regisztráció
       </Button>
     </Grid>
