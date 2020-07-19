@@ -6,7 +6,7 @@ import {
   Route,
 } from 'react-router-dom';
 import { Home } from './routes';
-import MenuBar from './MenuBar';
+import MenuBar from './menu/MenuBar';
 
 const App = () => (
   <Router>
