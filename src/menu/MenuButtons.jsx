@@ -7,7 +7,7 @@ const MenuButtons = () => (
       <Button style={{ color: 'white' }}>Belépés</Button>
     </Grid>
     <Grid item>
-      <Button color="primary" variant="contained">
+      <Button color="secondary" variant="contained">
         Regisztráció
       </Button>
     </Grid>

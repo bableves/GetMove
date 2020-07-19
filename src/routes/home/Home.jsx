@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Grid } from '@material-ui/core';
-import cf from '../../assets/asd.jpg';
+import cf from '../../utils/assets/asd.jpg';
 import { makeStyles } from '@material-ui/core/styles';
-import HeaderText from './HeaderText';
+import HeaderText from '../../components/home/HeaderText';
+import RegisterDialog from '../../components/home/register/RegisterDialog';
 
 const useStyles = makeStyles((theme) => ({
   GridContainer: {
@@ -15,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
   const classes = useStyles();
+  const [dialogVisibility, setDialogVisibility] = useState(false);
   return (
     <Grid
       container
@@ -25,9 +27,17 @@ const Home = () => {
         <HeaderText />
       </Grid>
       <Grid item>
-        <Button color="primary" variant="contained">
+        <Button
+          color="secondary"
+          variant="contained"
+          onClick={() => setDialogVisibility(true)}
+        >
           Regisztrálok
         </Button>
+        <RegisterDialog
+          open={dialogVisibility}
+          handleClose={() => setDialogVisibility(false)}
+        />
       </Grid>
     </Grid>
   );
